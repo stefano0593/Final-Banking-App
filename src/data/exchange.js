@@ -48,3 +48,5 @@ export const Conversions = {
         toCoin: 'BRL',
     },
 };
+
+// definit perechile de conversie

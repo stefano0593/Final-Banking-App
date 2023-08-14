@@ -21,7 +21,7 @@ export default function Payments() {
     const [expiryDate, setExpiry] = useState('');
     const [civ, setCiv] = useState('');
     const [pay, setPay] = useState('');
-
+    // stateuri pentru imputuri
     const getCardNumber = (event) => {
         setNumber(event.target.value);
     };
@@ -44,9 +44,11 @@ export default function Payments() {
             newValidCard.personName === card.personName &&
             newValidCard.expiryDate === card.expiryDate &&
             newValidCard.civ === card.civ
+            // verific daca datele introuse sunt bune
         ) {
             if (person.account.sold >= pay) {
                 person.account.sold -= pay;
+                // daca datele cardului sunt bune. imi trimite  banii si ma redirectioneaza spre sold
                 navigate('/acasa');
             } else {
                 alert('Sarakule');

@@ -23,7 +23,7 @@ export default function Login() {
             if (users[user].email === email && users[user].parola === password) {
                 localStorage.setItem('email', users[user].email);
                 navigate('/acasa');
-                // am trimis pe ruta emailul
+                // iterez prin users, verifica mailul si parola introdusa, iara daca datele introduse sunt bune, imi setez mailul in local storage
             } else {
             }
         }

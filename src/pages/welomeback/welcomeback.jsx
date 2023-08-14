@@ -7,12 +7,12 @@ import Footer from '../../components/footer/footer';
 import imaginegrafic from '.././../assets/paginaprincipala1.jpg';
 import imaginepaginaprincipala from '../../assets/pagina principala.png';
 export default function WelcomeBack() {
-    const location = useLocation();
-    // pt accesarea url-ului, sa iau chestii din el
     let account;
     const dataEmail = localStorage.getItem('email');
+    // scot emailul salvat in localstorage
     console.log(dataEmail);
     const person = getUser(dataEmail, users);
+    // verific in lista de users ce user are datele mele de logare(email) si returnez userul
     account = person.account;
 
     return (

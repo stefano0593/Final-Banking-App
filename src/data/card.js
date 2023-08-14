@@ -6,4 +6,4 @@ export class Card {
         this.civ = civ;
     }
 }
-// clasa cu datele cardului
+// clasa cu datele cardului(se foloseste in user)

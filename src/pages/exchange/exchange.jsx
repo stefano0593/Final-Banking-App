@@ -6,30 +6,36 @@ import './exchange.css';
 import Footer from '../../components/footer/footer';
 export default function Exchange() {
     const [isActive, setIsActive] = useState(null);
+    // pentru selectia conversiei
     const [exchangeSum, setSum] = useState('');
+    // pentru introducerea valorii in API
     const [returnSum, setReturn] = useState('');
+    // valoarea convertita
 
     const [fromCoin, setFromCoin] = useState('');
     const [toCoin, setToCoin] = useState('');
-
+    //valoarea de la moneda selectata la moenda convertita
     const getSum = (event) => {
         setSum(event.target.value);
     };
     // salvat valoarea de convertire DIN INPUT(valoarea)
     const change = () => {
         const sumAsNumber = parseInt(exchangeSum);
-
+        // conversie din string in numar
         fetch(
             `https://api.frankfurter.app/latest?amount=${sumAsNumber}&from=${fromCoin}&to=${toCoin}`
         )
             .then((conversion) => conversion.json())
             .then((conversion) => setReturn(conversion.rates[toCoin.toString()]));
     };
+    // pimeste datele de la API le converteste intr-un obiect Json si returneaza valoarea convertita
 
     const setConversionPair = (order, fromCoin, toCoin) => {
         setIsActive(order === isActive ? null : order);
+        // pt selectarea monezii din tabel
         setFromCoin(fromCoin);
         setToCoin(toCoin);
+        // aduc perechea de conversie din lista creata
         console.log(order, fromCoin, toCoin);
     };
 

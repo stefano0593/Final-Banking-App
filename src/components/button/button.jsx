@@ -6,3 +6,4 @@ export default function Button(props) {
         </button>
     );
 }
+// button cu props(i-am spus ce sa faca cand se apasa)

@@ -22,12 +22,14 @@ export default function Credit() {
     const getInterest = (event) => {
         setInterest(event.target.value);
     };
+
     const makeLoan = () => {
         const payNumber = parseInt(payNow);
         const interestNumber = parseInt(payInterest);
+        // convertit valorile in input din stringuri in numere
+
         if (payNumber <= 0) {
             alert('Nu poti imprumuta 0 lei');
-            // convertit valorile in input din stringuri in numere
         } else {
             console.log(payNumber, interestNumber);
             const interest = (payNumber * interestNumber) / 100;

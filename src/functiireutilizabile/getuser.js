@@ -5,4 +5,4 @@ export function getUser(email, users) {
         }
     }
 }
-// iterare pentru verificare email si returneaza userul gasit
+// iterare in lista useri pentru verificare email si returneaza userul gasit
