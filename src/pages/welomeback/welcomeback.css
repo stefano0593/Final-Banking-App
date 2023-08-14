@@ -1,0 +1,48 @@
+.total {
+    margin-top: 5rem;
+    margin-left: 3rem;
+}
+
+.totalsum {
+    text-align: center;
+    border: 4mm ridge rgba(2, 15, 81, 0.6);
+    margin-top: 2rem;
+    margin-left: 3rem;
+}
+.totalowed {
+    text-align: center;
+    width: 19rem;
+    margin-top: 5rem;
+    margin-left: 3rem;
+}
+.totalowedsum {
+    text-align: center;
+    border: 4mm ridge rgba(2, 15, 81, 0.6);
+    margin-top: 2rem;
+    margin-left: 3rem;
+}
+
+.firstimage {
+    width: 35rem;
+    height: 26rem;
+    margin-left: 6rem;
+}
+
+@media (max-width: 600px) {
+    .row {
+        flex-direction: column;
+        .firstimage {
+            width: 13rem;
+        }
+    }
+    /* .navbar {
+        display: none;
+    } */
+    .col {
+        width: 70%;
+    }
+}
+.row {
+    display: flex;
+    justify-content: center;
+}

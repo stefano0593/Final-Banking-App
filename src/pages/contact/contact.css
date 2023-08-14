@@ -1,0 +1,82 @@
+.backgroundimg {
+    width: 50%;
+    margin-bottom: 3rem;
+}
+
+.send-btn {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+}
+.send-message {
+    width: 3.5rem;
+    background-color: ghostwhite;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    width: 5rem;
+    display: flex;
+    align-self: center;
+    flex-direction: center;
+}
+.column-contact {
+    background-color: transparent;
+    width: 35rem;
+    height: 25rem;
+    margin-top: 3rem;
+}
+
+.row-container {
+    display: flex;
+    justify-content: center;
+    align-self: column;
+    justify-content: space-around;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text-labels {
+    font-size: 1.5rem;
+}
+.input-text {
+    font-size: 1rem;
+}
+
+.title-contact {
+    display: flex;
+    justify-content: center;
+    /* color:black; */
+    font-weight: bold;
+}
+.container-contact {
+    margin-top: 5rem;
+}
+
+.input-message {
+    width: 25rem;
+    height: 9rem;
+}
+
+@media (max-width: 600px) {
+    .row-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .input-text {
+        width: 10rem;
+    }
+    .title-contact {
+        width: 75%;
+        margin-left: 7rem;
+        font-size: 1.2rem;
+    }
+    .backgroundimg {
+        display: none;
+    }
+    .input-message {
+        width: 13rem;
+    }
+}

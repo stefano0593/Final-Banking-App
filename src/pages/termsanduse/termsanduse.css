@@ -1,0 +1,33 @@
+.container-terms {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.imgterms-use {
+    width: 42rem;
+    padding-top: 6rem;
+    margin-left: 2rem;
+}
+.terms-text {
+    font-size: 24px;
+    padding-left: 2rem;
+}
+
+.terms-title {
+    padding-left: 18rem;
+}
+
+@media (max-width: 600px) {
+    .container-terms {
+        display: flex;
+        flex-direction: column;
+    }
+    .imgterms-use {
+        display: none;
+    }
+    .terms-title {
+        justify-content: center;
+    }
+}

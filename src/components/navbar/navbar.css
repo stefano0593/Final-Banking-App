@@ -1,0 +1,70 @@
+.logo {
+    width: 6rem;
+    margin: 0;
+}
+.navbar {
+    background-color: #1a665a;
+    display: flex;
+    align-content: center;
+    height: 5rem;
+    justify-content: space-between;
+}
+
+.bank-name {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.bank-logo-name {
+    display: flex;
+    align-items: center;
+}
+
+.open-account {
+    background-color: ghostwhite;
+    padding: 0.5rem;
+    border-radius: 3rem;
+    text-decoration: none;
+    width: 5rem;
+    display: flex;
+    justify-content: center;
+}
+.paths {
+    display: flex;
+    align-items: middle;
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    margin-right: 10rem;
+}
+
+.welcome-message {
+    color: white;
+    padding-left: 4rem;
+    font-size: 1rem;
+}
+
+.dot {
+    height: 25px;
+    width: 25px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+.profile {
+    margin-left: 2rem;
+    background-color: transparent;
+    border: none;
+}
+.profile :hover {
+    cursor: pointer;
+}
+
+.log-out {
+    border-radius: 2rem;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px,
+        rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    margin-left: 2rem;
+    padding: 0.5rem;
+}
